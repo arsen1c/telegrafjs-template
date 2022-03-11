@@ -23,3 +23,6 @@ For example, if you want to create an admin specific command, kick, then you can
   |---- admin
          |-- kick.js
 ```
+
+# Usage
+![image](https://user-images.githubusercontent.com/46086050/157853275-a1353672-d825-4ce1-808f-2a0a204724fa.png)
