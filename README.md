@@ -6,7 +6,7 @@
 
   After that
 
-  - Add **bot secret token** in a `.env` file. Check [.env.exampel file](https://github.com/arsen1c/telegrafjs-template/blob/master/.env.example) for variable names.
+  - Add **bot secret token** in a `.env` file. Check [.env.example file](https://github.com/arsen1c/telegrafjs-template/blob/master/.env.example) for variable names.
   - Run `yarn start` or `npm start` to start the bot.
 
 # Creating new commands
