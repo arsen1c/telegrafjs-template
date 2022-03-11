@@ -1,5 +1,5 @@
 > # Template for Telegram bots.
-Boilerplate for creating [Telegram bots](https://telegram.org/) using [telegraf.js](https://telegrafjs.org)
+> Boilerplate for creating [Telegram bots](https://telegram.org/) using [telegraf.js](https://telegrafjs.org)
 
 # Setup
   This project needs `express.js`, `telegraf.js` and `dotenv` packages to work right out of the box. Just run `yarn` or `npm install` in the terminal to install those packages. 
