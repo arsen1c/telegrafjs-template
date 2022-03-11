@@ -1,8 +1,8 @@
 export default {
   name: 'echo',
-  description: 'Echo the message!',
+  description: 'Echoes the message!',
   args: true,
-  usage: '<command-name>',
+  usage: 'Some text to display',
   chatAction: 'typing',
   execute(ctx, args, commands) {
     ctx.reply(args.join(" "));

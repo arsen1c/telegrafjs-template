@@ -6,7 +6,7 @@ export default {
   chatAction: 'typing',
   execute(ctx, args, commands) {
     if (args && commands.has(args[0])) {
-      const command = commands.get(args[0]);
+      const { default: command } = commands.get(args[0]);
       return ctx.replyWithMarkdown(
         `*Command name:*\n${command.name}\n\n` +
           `*Description:*\n${command.description}\n\n` +
