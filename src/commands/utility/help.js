@@ -5,7 +5,6 @@ export default {
   usage: '<command-name>',
   chatAction: 'typing',
   execute(ctx, args, commands) {
-    console.log("Running help command");
     if (args && commands.has(args[0])) {
       const command = commands.get(args[0]);
       return ctx.replyWithMarkdown(
@@ -17,7 +16,7 @@ export default {
       );
     } else if (!args.length) {
       let command = 'Available Commands:\n';
-      for (let [value, index] of commands) {
+      for (let [value, _] of commands) {
         command += `/${value}\n`;
       }
   command += "\nType /help <command_name> for command details."

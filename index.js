@@ -6,17 +6,17 @@ import fs from 'fs';
 const bot = new Telegraf(BOT_API);
 const app = express();
 
-const commandFolders = fs.readdirSync('./src/commands');    // Grab all command folder in ./commands
+const commandFolders = fs.readdirSync('./src/commands');    // grab all command folder in ./commands
 const collection = new Map();
 
 const getAllCommands = async () => {
-  // Get all the commands and put them in collection map
+  // get all the commands and put them in collection map
   for (const folder of commandFolders) {
     const commandFiles = fs
       .readdirSync(`./src/commands/${folder}`)
-      .filter((file) => file.endsWith('.js'));    // Get files from each command folder
+      .filter((file) => file.endsWith('.js'));    // get files from each command folder
     for (const file of commandFiles) {
-      const command = await import(`./src/commands/${folder}/${file}`);
+      const command = await import(`./src/commands/${folder}/${file}`); // dynamically import command files
       collection.set(command.default.name, command);
     }
   }
