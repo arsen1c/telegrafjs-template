@@ -12,9 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/arsen1c/telegrafjs-template.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "telegram",
+    "telegraf",
+    "bot"
+  ],
+  "author": "arsen1c",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/arsen1c/telegrafjs-template/issues"
   },
